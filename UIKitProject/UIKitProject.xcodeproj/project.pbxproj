@@ -13,6 +13,7 @@
 		3B82A2A7297237820088443C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B82A2A5297237820088443C /* Main.storyboard */; };
 		3B82A2A9297237840088443C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B82A2A8297237840088443C /* Assets.xcassets */; };
 		3B82A2AC297237840088443C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B82A2AA297237840088443C /* LaunchScreen.storyboard */; };
+		3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31A2975138800A9F853 /* OnBoardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B82A2A8297237840088443C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B82A2AB297237840088443C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B82A2AD297237840088443C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB8A31A2975138800A9F853 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3B82A29F297237820088443C /* AppDelegate.swift */,
 				3B82A2A1297237820088443C /* SceneDelegate.swift */,
 				3B82A2A3297237820088443C /* ViewController.swift */,
+				3BB8A31A2975138800A9F853 /* OnBoardingView.swift */,
 				3B82A2A5297237820088443C /* Main.storyboard */,
 				3B82A2A8297237840088443C /* Assets.xcassets */,
 				3B82A2AA297237840088443C /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
+				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 			);
