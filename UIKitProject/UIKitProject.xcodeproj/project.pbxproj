@@ -16,6 +16,7 @@
 		3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31A2975138800A9F853 /* OnBoardingView.swift */; };
 		3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31F2975187300A9F853 /* ButtonView.swift */; };
 		3BB8A325297529C700A9F853 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A324297529C700A9F853 /* LabelView.swift */; };
+		3BB8A328297530D500A9F853 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A327297530D500A9F853 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3BB8A31A2975138800A9F853 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		3BB8A31F2975187300A9F853 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		3BB8A324297529C700A9F853 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		3BB8A327297530D500A9F853 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3BB8A326297530C300A9F853 /* Image */,
 				3BB8A323297529B000A9F853 /* Label */,
 				3BB8A31C297517AC00A9F853 /* Button */,
 				3B82A29F297237820088443C /* AppDelegate.swift */,
@@ -90,6 +93,14 @@
 				3BB8A324297529C700A9F853 /* LabelView.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		3BB8A326297530C300A9F853 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3BB8A327297530D500A9F853 /* ImageView.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
+				3BB8A328297530D500A9F853 /* ImageView.swift in Sources */,
 				3BB8A325297529C700A9F853 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

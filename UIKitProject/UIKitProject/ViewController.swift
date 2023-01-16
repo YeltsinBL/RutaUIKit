@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func loadView() {
 //        self.view = OnBoardingView()
 //        self.view = ButtonView()
-        self.view = LabelView()
+//        self.view = LabelView()
+        self.view = ImageView()
     }
     
     override func viewDidLoad() {
