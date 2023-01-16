@@ -17,3 +17,6 @@ Explicación de los algunos métodos de la `ViewController`:
 - viewDidLoad: es un método que controla el ciclo de vida del viewcontroller.
 - viewWillAppear: es un método que se llama antes de que la vista del viewcontroller aparezca.
 - viewWillDisappear: es un método que se llama antes de que desaparezca una vista de la aplicación.
+
+Explicación de lo realizado en el `Main`:
+- Constrain: hemos agregado una normas de constrain a los elementos para que cualquier cambio en la vista siempre estén en la misma posición dada.
