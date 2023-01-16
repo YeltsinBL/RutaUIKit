@@ -20,3 +20,4 @@ Explicación de los algunos métodos de la `ViewController`:
 
 Explicación de lo realizado en el `Main`:
 - Constrain: hemos agregado una normas de constrain a los elementos para que cualquier cambio en la vista siempre estén en la misma posición dada.
+- ViewController: se conectó la vista con este archivo para poder realizar una acción y cambiar sus propiedades por código.

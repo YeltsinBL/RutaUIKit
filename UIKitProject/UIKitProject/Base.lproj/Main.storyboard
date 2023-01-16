@@ -20,6 +20,9 @@
                                 <rect key="frame" x="154.66666666666666" y="421.33333333333331" width="83.666666666666657" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Aceptar"/>
+                                <connections>
+                                    <action selector="didTapOnBtnAceptar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxI-lK-qkF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction Constrain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCM-Jk-y7H">
                                 <rect key="frame" x="103" y="323" width="187" height="58"/>
@@ -41,6 +44,10 @@
                             <constraint firstItem="OYI-di-2Lt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wHq-bG-cCT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="OYI-di-2Lt" id="Qpz-YY-yLh"/>
+                        <outlet property="nameLabel" destination="mCM-Jk-y7H" id="HYm-Ms-hW1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
