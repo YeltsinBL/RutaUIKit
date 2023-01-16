@@ -14,7 +14,7 @@
 		3B82A2A9297237840088443C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B82A2A8297237840088443C /* Assets.xcassets */; };
 		3B82A2AC297237840088443C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B82A2AA297237840088443C /* LaunchScreen.storyboard */; };
 		3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31A2975138800A9F853 /* OnBoardingView.swift */; };
-		3BB8A3202975187300A9F853 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31F2975187300A9F853 /* ButtonController.swift */; };
+		3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8A31F2975187300A9F853 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		3B82A2AB297237840088443C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B82A2AD297237840088443C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB8A31A2975138800A9F853 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
-		3BB8A31F2975187300A9F853 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
+		3BB8A31F2975187300A9F853 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		3BB8A31C297517AC00A9F853 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				3BB8A31F2975187300A9F853 /* ButtonController.swift */,
+				3BB8A31F2975187300A9F853 /* ButtonView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			files = (
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
-				3BB8A3202975187300A9F853 /* ButtonController.swift in Sources */,
+				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 			);
