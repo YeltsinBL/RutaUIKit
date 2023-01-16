@@ -14,7 +14,8 @@ class ViewController: UIViewController {
 //        self.view = OnBoardingView()
 //        self.view = ButtonView()
 //        self.view = LabelView()
-        self.view = ImageView()
+//        self.view = ImageView()
+        self.view = TableView()
     }
     
     override func viewDidLoad() {
