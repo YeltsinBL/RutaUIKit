@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 //    Cargamos la vista
     override func loadView() {
 //        self.view = OnBoardingView()
-        self.view = ButtonView()
+//        self.view = ButtonView()
+        self.view = LabelView()
     }
     
     override func viewDidLoad() {

@@ -6,3 +6,5 @@
 `OnBoardingView`: se creó para poder quitar la responsabilidad de crear la vista en `ViewController` por lo que queda el código mas limpio.
 
 `ButtonView`: se creó este fichero donde contiene sólo la creación de botones con sus propiedades y constrains.
+
+`LabelView`: se creó este fichero donde contiene sólo la creación de labels con sus propiedades y constrains; para las propiedades se hizo de 2 formas: una normal y otra con un diccionario que contiene una key 'el texto' y los atributos. 

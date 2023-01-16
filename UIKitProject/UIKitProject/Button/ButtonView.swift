@@ -92,7 +92,7 @@ class ButtonView: UIView{
     }
     
     private func addSubviews() {
-//        agregar la vista de imagen creada por codigo a la vista padre
+//        agregar la vista creada por codigo a la vista padre
 //        view.addSubview(onboardingImageView)
         [btnButton1, btnButton2, btnButton3, btnButton4].forEach(addSubview)
     }
