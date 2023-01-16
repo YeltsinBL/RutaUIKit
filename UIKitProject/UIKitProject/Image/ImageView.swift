@@ -17,7 +17,7 @@ class ImageView: UIView{
         image.tintColor = .red
         image.translatesAutoresizingMaskIntoConstraints = false
         
-//        anadir un borde circular
+//        Añadir un borde circular
         image.layer.cornerRadius = 150
         image.layer.borderWidth = 10
         image.layer.borderColor = UIColor.blue.cgColor
@@ -34,11 +34,11 @@ class ImageView: UIView{
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
-//        anadir un borde circular
+//        Añadir un borde circular
         imageView.layer.cornerRadius = 50
         imageView.layer.borderWidth = 5
         imageView.layer.borderColor = UIColor.red.cgColor
-        imageView.layer.masksToBounds = true //para hacer los cortes a la imagen fuera del circulo
+        imageView.layer.masksToBounds = true //para hacer los cortes a la imagen fuera del círculo
         return imageView
     }()
     
@@ -57,7 +57,7 @@ class ImageView: UIView{
     }
     
     private func addSubviews() {
-//        agregar la vista creada por codigo a la vista padre
+//        agregar la vista creada por código a la vista padre
         [imgImage1, imgImage2].forEach(addSubview)
     }
     
@@ -65,13 +65,13 @@ class ImageView: UIView{
         NSLayoutConstraint.activate([
             imgImage1.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             imgImage1.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            anadimos un ancho y alto
+//            Añadimos un ancho y alto
             imgImage1.widthAnchor.constraint(equalToConstant: 300),
             imgImage1.heightAnchor.constraint(equalToConstant: 300),
             
             imgImage2.topAnchor.constraint(equalTo: imgImage1.bottomAnchor, constant: 50),
             imgImage2.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            anadimos un ancho y alto
+//            Añadimos un ancho y alto
             imgImage2.widthAnchor.constraint(equalToConstant: 280),
             imgImage2.heightAnchor.constraint(equalToConstant: 100)
         ])
