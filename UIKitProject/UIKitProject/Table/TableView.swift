@@ -52,7 +52,9 @@ class TableView: UIView, UITableViewDataSource {
 //        conectamos los datos con la vista mediante el dataSource
         tblTableView.dataSource = self
 //        Registramos una celda
-        tblTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+//        tblTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+//        Registramos la celda custom
+        tblTableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
         [tblTableView].forEach(addSubview)
     }
     
@@ -73,17 +75,24 @@ class TableView: UIView, UITableViewDataSource {
     }
 //    Preguntamos al TableView que elemento mostrar por cada constante del array house
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
 //        utilizamos el identificador de la celda para que se pueda mostrar en la vista
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        
+//        Agregamos el nuevo identificador de la celda custom y la casteamos para que lo tomo como referencia
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
 
 //        obtenemos el indice del array mediante el indexPath.row
         let model = house[indexPath.row]
 //        rellenamos las celdas
-        var listContentConfiguration = UIListContentConfiguration.cell()
-        listContentConfiguration.text = model.tittle
-        listContentConfiguration.image = UIImage(systemName: model.imageName)
+//        var listContentConfiguration = UIListContentConfiguration.cell()
+//        listContentConfiguration.text = model.tittle
+//        listContentConfiguration.image = UIImage(systemName: model.imageName)
 //        asignamos la configuración a la celda creada
-        cell.contentConfiguration = listContentConfiguration
+//        cell.contentConfiguration = listContentConfiguration
+        
+//        si no se castea la celda custom no aparecera este metodo para llenar los datos
+        cell.configure(model: model)
         
         return cell
     }
