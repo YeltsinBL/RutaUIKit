@@ -23,8 +23,8 @@ let house = [
 ]
 
 
-
-class TableView: UIView, UITableViewDataSource {
+//Agregamos 'UITableViewDelegate' para realizar acciones y modificar las propiedades en la tabla
+class TableView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     private let tblTableView: UITableView = {
         let tableView = UITableView()
@@ -51,6 +51,8 @@ class TableView: UIView, UITableViewDataSource {
         tblTableView.backgroundColor = .blue
 //        conectamos los datos con la vista mediante el dataSource
         tblTableView.dataSource = self
+//        agregamos el Delegate a la tabla
+        tblTableView.delegate = self
 //        Registramos una celda
 //        tblTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
 //        Registramos la celda custom
@@ -68,7 +70,7 @@ class TableView: UIView, UITableViewDataSource {
             
         ])
     }
-//    Metodos necesarios que pide Xcode para utilizar el dataSource
+//    Métodos necesarios que pide Xcode para utilizar el dataSource
 //    Damos un valor del número de elementos que vamos a mostrar en el TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         house.count
@@ -96,4 +98,10 @@ class TableView: UIView, UITableViewDataSource {
         
         return cell
     }
+//    Método al hacer clic en una celda
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = house[indexPath.row]
+        print("Celda: \(model.tittle)")
+    }
+    
 }

@@ -11,7 +11,10 @@
 
 `ImageView`: se creó este fichero donde contiene sólo la creación de imágenes con sus propiedades y constrains; para sus propiedades agregamos un borde circular que, si la imagen sobrepasa el circulo, esta se recorta ajustándose al diseño.
 
-`TableView`: creamos una TableView y le registramos una celda con su identificador que servirá para agregarlo en uno de los métodos necesarios de Xcode para que se pueda visualizar las celdas por la cantidad de elementos de un array. Para conectar los datos del array con la vista se utiliza el dataSource. Para mostrar los datos en al celda, primero debemos de obtener el indice del array, luego configuramos los datos y lo añadimos a la celda.
+`TableView`: creamos una TableView y le registramos una celda con su identificador que servirá para agregarlo en uno de los métodos necesarios de Xcode para que se pueda visualizar las celdas por la cantidad de elementos de un array. 
+- Para conectar los datos del array con la vista se utiliza el dataSource. 
+- Para mostrar los datos en al celda, primero debemos de obtener el indice del array, luego configuramos los datos y lo añadimos a la celda.
+- Agregamos el 'UITableViewDelegate' para realizar acciones y cambiar propiedades de la tabla
 
 `CustomTableViewCell`: creamos este fichero desde un 'Cocoa Touch Class' para crear las celdas. Para utilizarlo y pasar los datos:
 - Debemos de registrar la celda en la TableView con su identificador.
