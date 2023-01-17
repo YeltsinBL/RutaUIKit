@@ -44,7 +44,9 @@ class TableView: UIView {
     private func addSubviews() {
         
 //        asignamos las instancias a las propiedasdes
-        self.dataSource = TableViewDataSource(dataSource: house)
+//        self.dataSource = TableViewDataSource(dataSource: house)
+//        Cambio: pasamos el array de arrays para obtener los títulos
+        self.dataSource = TableViewDataSource(dataSource: allMyDevices)
         self.delegate = TableViewDelegate()
         
 //        tblTableView.backgroundColor = .blue

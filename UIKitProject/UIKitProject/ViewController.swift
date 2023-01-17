@@ -30,7 +30,9 @@ class ViewController: UIViewController {
 /*        Otra forma de llamar a la a la tabla hacia la Vista*/
 //        let tableView = UITableView()
 ////        asignamos las instancias a las propiedasdes
-//        self.dataSource = TableViewDataSource(dataSource: house)
+////        self.dataSource = TableViewDataSource(dataSource: house)
+//        Cambio: pasamos el array de arrays para obtener los títulos
+//        self.dataSource = TableViewDataSource(dataSource: allMyDevices)
 //        self.delegate = TableViewDelegate()
 ////        conectamos los datos con la vista mediante el dataSource
 //        tableView.dataSource = dataSource

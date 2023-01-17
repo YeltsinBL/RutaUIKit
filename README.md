@@ -15,6 +15,7 @@
 - TablleViewDataSourece: Agregamos el 'UITableViewDataSource' para conectar los datos del array con la vista.
 -- Primero debemos de indicar la cantidad de elementos a mostrar en la tabla.
 -- Luego, para mostrar los datos en al celda, debemos de obtener el indice del array, después configuramos los datos y lo añadimos a la celda.
+-- Para agregar un título a las secciones de la Tabla se utiliza el 'titleForHeaderInSection' y cambiamos las configuraciones para adaptarlos a un array de arrays, porque cada array será una sección diferente.
 - TableViewDelegate: Agregamos el 'UITableViewDelegate' para realizar acciones y cambiar propiedades de la tabla
 
 `CustomTableViewCell`: creamos este fichero desde un 'Cocoa Touch Class' para crear las celdas. Para utilizarlo y pasar los datos:
