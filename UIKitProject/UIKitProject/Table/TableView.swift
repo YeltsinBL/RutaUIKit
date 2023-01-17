@@ -15,7 +15,6 @@ struct Device {
 }
 
 
-//Agregamos 'UITableViewDelegate' para realizar acciones y modificar las propiedades en la tabla
 class TableView: UIView {
     
     private let tblTableView: UITableView = {
@@ -33,7 +32,7 @@ class TableView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    creamos las instancias de las nuevas clases
+//    creamos las variables de las nuevas clases
     private var dataSource : TableViewDataSource?
     private var delegate : TableViewDelegate?
     
@@ -48,8 +47,7 @@ class TableView: UIView {
         self.dataSource = TableViewDataSource(dataSource: house)
         self.delegate = TableViewDelegate()
         
-//        agregar la vista creada por código a la vista padre
-        tblTableView.backgroundColor = .blue
+//        tblTableView.backgroundColor = .blue
 //        conectamos los datos con la vista mediante el dataSource
         tblTableView.dataSource = dataSource
 //        agregamos el Delegate a la tabla
@@ -58,6 +56,7 @@ class TableView: UIView {
 //        tblTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
 //        Registramos la celda custom
         tblTableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
+//        agregar la vista creada por código a la vista padre
         [tblTableView].forEach(addSubview)
     }
     

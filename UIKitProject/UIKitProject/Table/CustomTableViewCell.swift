@@ -32,7 +32,7 @@ class CustomTableViewCell: UITableViewCell {
             imgImageView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             imgImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
             imgImageView.widthAnchor.constraint(equalToConstant: 40),
-            imgImageView.heightAnchor.constraint(equalToConstant: 40),
+//            imgImageView.heightAnchor.constraint(equalToConstant: 40),
             
             lblLabel.leadingAnchor.constraint(equalTo: imgImageView.trailingAnchor,constant: 20),
             lblLabel.centerYAnchor.constraint(equalTo: imgImageView.centerYAnchor),

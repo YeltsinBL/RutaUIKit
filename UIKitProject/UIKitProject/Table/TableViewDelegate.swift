@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//Agregamos 'UITableViewDelegate' para realizar acciones y modificar las propiedades en la tabla
 final class TableViewDelegate: NSObject, UITableViewDelegate{
     
     //    Método al hacer clic en una celda
