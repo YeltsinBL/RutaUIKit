@@ -12,6 +12,8 @@
 		3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C11297628E700B35243 /* TableViewDataSource.swift */; };
 		3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C1329762AA500B35243 /* TableViewDelegate.swift */; };
 		3B72E7CD29784D050017CC32 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CC29784D050017CC32 /* StackView.swift */; };
+		3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CF2978563B0017CC32 /* CollectionView.swift */; };
+		3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */; };
 		3B82A2A0297237820088443C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A29F297237820088443C /* AppDelegate.swift */; };
 		3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A1297237820088443C /* SceneDelegate.swift */; };
 		3B82A2A4297237820088443C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A3297237820088443C /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		3B713C11297628E700B35243 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3B713C1329762AA500B35243 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		3B72E7CC29784D050017CC32 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		3B72E7CF2978563B0017CC32 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B82A29C297237820088443C /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82A29F297237820088443C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B82A2A1297237820088443C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		3B72E7CE297856220017CC32 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				3B72E7CF2978563B0017CC32 /* CollectionView.swift */,
+				3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		3B82A293297237820088443C = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B72E7CE297856220017CC32 /* Collection */,
 				3B72E7CB29784C980017CC32 /* Stack */,
 				3B713C0B2975CB3000B35243 /* Table */,
 				3BB8A326297530C300A9F853 /* Image */,
@@ -206,10 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */,
+				3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */,
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
+				3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 				3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */,
 				3B713C0D2975CB4300B35243 /* TableView.swift in Sources */,

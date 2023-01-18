@@ -24,3 +24,5 @@
 - Después de agregar el identificador, lo casteamos a la celda creada para que lo tome como referencia y poder acceder al método que la llenará con los datos.
 
 `StackView`: creamos esta vista, porque nos permite agregar subvistas una encima de otra o a los costados, también a las subvistas agregadas les asignas un constrains, lo cual nos ahorra código.
+
+`CollectionView`:  es parecido a la creación de una TableView, solo que la diferencia es al agregara las celdas al CollectionView, para ello utilizamos el 'UICollectionViewFlowLayout' porque sin esto no se visualizará las celdas.

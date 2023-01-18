@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 
 class StackView: UIView {
-//    Creacion de StackView
+//    Creación de StackView
     private let svStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
-//        especificar la alineacion, por defecto es horizontal
+//        especificar la alineación, por defecto es horizontal
         stackView.axis = .vertical
         stackView.spacing = 20 //dar un espacio tipo padding
 //        stackView.alignment = .trailing //alinear las vistas
         return stackView
     }()
     
-//    creacion del titulo
+//    creación del título
     private let lblLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

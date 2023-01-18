@@ -43,7 +43,7 @@ class TableView: UIView {
     
     private func addSubviews() {
         
-//        asignamos las instancias a las propiedasdes
+//        asignamos las instancias a las propiedades
 //        self.dataSource = TableViewDataSource(dataSource: house)
 //        Cambio: pasamos el array de arrays para obtener los títulos
         self.dataSource = TableViewDataSource(dataSource: allMyDevices)
