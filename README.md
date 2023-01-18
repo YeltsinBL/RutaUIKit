@@ -22,3 +22,5 @@
 - Debemos de registrar la celda en la TableView con su identificador.
 - Agregar el identificador en el método que mostrará la celda en la table.
 - Después de agregar el identificador, lo casteamos a la celda creada para que lo tome como referencia y poder acceder al método que la llenará con los datos.
+
+`StackView`: creamos esta vista, porque nos permite agregar subvistas una encima de otra o a los costados, también a las subvistas agregadas les asignas un constrains, lo cual nos ahorra código.

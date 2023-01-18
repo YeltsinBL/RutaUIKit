@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 //        self.view = ButtonView()
 //        self.view = LabelView()
 //        self.view = ImageView()
-        self.view = TableView()
+//        self.view = TableView()
 /*        Otra forma de llamar a la a la tabla hacia la Vista*/
 //        let tableView = UITableView()
 ////        asignamos las instancias a las propiedasdes
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 ////        agregamos la tabla a la vista
 //        view = tableView
 /*        Otra forma de llamar a la a la tabla hacia la Vista*/
-        
+        self.view = StackView()
     }
     
     override func viewDidLoad() {

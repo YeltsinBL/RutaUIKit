@@ -11,6 +11,7 @@
 		3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */; };
 		3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C11297628E700B35243 /* TableViewDataSource.swift */; };
 		3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C1329762AA500B35243 /* TableViewDelegate.swift */; };
+		3B72E7CD29784D050017CC32 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CC29784D050017CC32 /* StackView.swift */; };
 		3B82A2A0297237820088443C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A29F297237820088443C /* AppDelegate.swift */; };
 		3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A1297237820088443C /* SceneDelegate.swift */; };
 		3B82A2A4297237820088443C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A3297237820088443C /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3B713C11297628E700B35243 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3B713C1329762AA500B35243 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		3B72E7CC29784D050017CC32 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		3B82A29C297237820088443C /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82A29F297237820088443C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B82A2A1297237820088443C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		3B72E7CB29784C980017CC32 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				3B72E7CC29784D050017CC32 /* StackView.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		3B82A293297237820088443C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B72E7CB29784C980017CC32 /* Stack */,
 				3B713C0B2975CB3000B35243 /* Table */,
 				3BB8A326297530C300A9F853 /* Image */,
 				3BB8A323297529B000A9F853 /* Label */,
@@ -205,6 +216,7 @@
 				3BB8A328297530D500A9F853 /* ImageView.swift in Sources */,
 				3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */,
 				3BB8A325297529C700A9F853 /* LabelView.swift in Sources */,
+				3B72E7CD29784D050017CC32 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
