@@ -15,6 +15,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    /**Para mostrar una vista de tipo Sheet**/
+    private lazy var btnShowSheet: UIButton = {
+        var configuration = UIButton.Configuration.bordered()
+        configuration.title = "Mostrar Sheet A"
+        
+        let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
+            self.startNavigation()
+        }))
+        button.configuration = configuration
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    func startNavigation(){
+        present(ViewControllerA(), animated: true)
+    }
+    /**Para mostrar una vista de tipo Sheet**/
     
 //    creamos las variables de las nuevas clases
 //    private var dataSource : TableViewDataSource?
@@ -22,6 +38,7 @@ class ViewController: UIViewController {
     
 //    Cargamos la vista
     override func loadView() {
+        super.loadView()
 //        self.view = OnBoardingView()
 //        self.view = ButtonView()
 //        self.view = LabelView()
@@ -44,14 +61,19 @@ class ViewController: UIViewController {
 //        view = tableView
 /*        Otra forma de llamar a la a la tabla hacia la Vista*/
 //        self.view = StackView()
-        self.view = CollectionView()
+//        self.view = CollectionView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Para acceder a la vista
         view.backgroundColor = .white
-
+        
+        [btnShowSheet].forEach(view.addSubview)
+        NSLayoutConstraint.activate([
+            btnShowSheet.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            btnShowSheet.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
 
 }
