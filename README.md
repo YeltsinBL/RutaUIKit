@@ -27,4 +27,6 @@
 
 `CollectionView`:  es parecido a la creación de una TableView, solo que la diferencia es al agregara las celdas al CollectionView, para ello utilizamos el 'UICollectionViewFlowLayout' porque sin esto no se visualizará las celdas.
 
-`NavigationModal`: utilizamos directamente el 'ViewController' para poder mostrar una vista 'Sheet' que utiliza obligatoriamente el 'UIViewController' por el cual no lo hice en una UIView como los demás.
+`Navigation`: se realizara el modo 'Modal' y Push:
+- Modal: muestra una vista encima de otra, utilizamos directamente el 'ViewController' para poder mostrar una vista 'Sheet' que utiliza obligatoriamente el 'UIViewController' por el cual no lo hice en una UIView como los demás.
+- Push: se puede avanzar y retroceder en las vistas, en esta ocasión cree un nuevo 'storyboard' para 'MainA' para agregar un NavigationController.

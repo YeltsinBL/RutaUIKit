@@ -60,6 +60,7 @@ class ViewController: UIViewController {
 ////        agregamos la tabla a la vista
 //        view = tableView
 /*        Otra forma de llamar a la a la tabla hacia la Vista*/
+        
 //        self.view = StackView()
 //        self.view = CollectionView()
     }

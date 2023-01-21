@@ -11,6 +11,10 @@
 		3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */; };
 		3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C11297628E700B35243 /* TableViewDataSource.swift */; };
 		3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C1329762AA500B35243 /* TableViewDelegate.swift */; };
+		3B729604297B71BB00139F0B /* MainA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B729603297B71BB00139F0B /* MainA.storyboard */; };
+		3B729606297B71DF00139F0B /* ViewControllerPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729605297B71DF00139F0B /* ViewControllerPush.swift */; };
+		3B729608297B796100139F0B /* ViewControllerPushA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729607297B796100139F0B /* ViewControllerPushA.swift */; };
+		3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */; };
 		3B72E7CD29784D050017CC32 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CC29784D050017CC32 /* StackView.swift */; };
 		3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CF2978563B0017CC32 /* CollectionView.swift */; };
 		3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */; };
@@ -33,6 +37,10 @@
 		3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3B713C11297628E700B35243 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3B713C1329762AA500B35243 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		3B729603297B71BB00139F0B /* MainA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainA.storyboard; sourceTree = "<group>"; };
+		3B729605297B71DF00139F0B /* ViewControllerPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPush.swift; sourceTree = "<group>"; };
+		3B729607297B796100139F0B /* ViewControllerPushA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPushA.swift; sourceTree = "<group>"; };
+		3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPushB.swift; sourceTree = "<group>"; };
 		3B72E7CC29784D050017CC32 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		3B72E7CF2978563B0017CC32 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +82,26 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		3B7295FF297B6EDE00139F0B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				3B72E7D42978EDDC0017CC32 /* ViewControllerA.swift */,
+				3B72E7D62978F6680017CC32 /* ViewControllerB.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		3B729600297B6EE500139F0B /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				3B729603297B71BB00139F0B /* MainA.storyboard */,
+				3B729605297B71DF00139F0B /* ViewControllerPush.swift */,
+				3B729607297B796100139F0B /* ViewControllerPushA.swift */,
+				3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		3B72E7CB29784C980017CC32 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,13 +119,13 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
-		3B72E7D329786D180017CC32 /* NavigationModal */ = {
+		3B72E7D329786D180017CC32 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				3B72E7D42978EDDC0017CC32 /* ViewControllerA.swift */,
-				3B72E7D62978F6680017CC32 /* ViewControllerB.swift */,
+				3B729600297B6EE500139F0B /* Push */,
+				3B7295FF297B6EDE00139F0B /* Modal */,
 			);
-			path = NavigationModal;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		3B82A293297237820088443C = {
@@ -119,7 +147,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
-				3B72E7D329786D180017CC32 /* NavigationModal */,
+				3B72E7D329786D180017CC32 /* Navigation */,
 				3B72E7CE297856220017CC32 /* Collection */,
 				3B72E7CB29784C980017CC32 /* Stack */,
 				3B713C0B2975CB3000B35243 /* Table */,
@@ -221,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B82A2AC297237840088443C /* LaunchScreen.storyboard in Resources */,
+				3B729604297B71BB00139F0B /* MainA.storyboard in Resources */,
 				3B82A2A9297237840088443C /* Assets.xcassets in Resources */,
 				3B82A2A7297237820088443C /* Main.storyboard in Resources */,
 			);
@@ -235,10 +264,12 @@
 			files = (
 				3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */,
 				3B72E7D72978F6680017CC32 /* ViewControllerB.swift in Sources */,
+				3B729608297B796100139F0B /* ViewControllerPushA.swift in Sources */,
 				3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */,
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
+				3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
 				3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
@@ -247,6 +278,7 @@
 				3BB8A328297530D500A9F853 /* ImageView.swift in Sources */,
 				3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */,
 				3BB8A325297529C700A9F853 /* LabelView.swift in Sources */,
+				3B729606297B71DF00139F0B /* ViewControllerPush.swift in Sources */,
 				3B72E7CD29784D050017CC32 /* StackView.swift in Sources */,
 				3B72E7D52978EDDD0017CC32 /* ViewControllerA.swift in Sources */,
 			);
