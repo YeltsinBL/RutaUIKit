@@ -18,10 +18,11 @@ class ViewController: UIViewController {
     /**Para mostrar una vista de tipo Sheet**/
     private lazy var btnShowSheet: UIButton = {
         var configuration = UIButton.Configuration.bordered()
-        configuration.title = "Mostrar Sheet A"
+        configuration.title = "Mostrar Sheet"
         
         let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
-            self.startNavigation()
+            //self.startNavigation() //para mostrar vistas Modales
+            self.presentSheetController()//para mostrar una Sheet Presentation
         }))
         button.configuration = configuration
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +30,12 @@ class ViewController: UIViewController {
     }()
     func startNavigation(){
         present(ViewControllerA(), animated: true)
+    }
+    func presentSheetController(){
+        let viewControllerToPresent = SheetViewController()
+
+        present(viewControllerToPresent, animated: true)
+        
     }
     /**Para mostrar una vista de tipo Sheet**/
     
