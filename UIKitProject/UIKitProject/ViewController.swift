@@ -70,6 +70,7 @@ class ViewController: UIViewController {
         
 //        self.view = StackView()
 //        self.view = CollectionView()
+        self.view = CollectionViewModern()
     }
     
     override func viewDidLoad() {
@@ -77,11 +78,11 @@ class ViewController: UIViewController {
         // Para acceder a la vista
         view.backgroundColor = .white
         
-        [btnShowSheet].forEach(view.addSubview)
-        NSLayoutConstraint.activate([
-            btnShowSheet.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            btnShowSheet.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+//        [btnShowSheet].forEach(view.addSubview)
+//        NSLayoutConstraint.activate([
+//            btnShowSheet.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            btnShowSheet.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+//        ])
     }
 
 }

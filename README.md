@@ -26,6 +26,11 @@
 `StackView`: creamos esta vista, porque nos permite agregar subvistas una encima de otra o a los costados, también a las subvistas agregadas les asignas un constrains, lo cual nos ahorra código.
 
 `CollectionView`:  es parecido a la creación de una TableView, solo que la diferencia es al agregara las celdas al CollectionView, para ello utilizamos el 'UICollectionViewFlowLayout' porque sin esto no se visualizará las celdas.
+- Modern: se utilizó la nueva api para optimizar el código que la versión anterior, para ello:
+-- Utilizamos el 'UICollectionLayoutListConfiguration' para la configuración que utilizará el layout 'UICollectionViewCompositionalLayout' y este lo agregamos al 'CollectionView'
+-- Para conectar la vista con los datos utilizamos el 'UICollectionViewDiffableDataSource' que recibe la sección y el modelo de datos.
+--Luego de configurar la celda, utilizamos 'UICollectionViewDiffableDataSource' para mostrar la celda en el CollectionView
+--Para pasar los datos al dataSource, se debe especificar cuantas secciones hay mediante el 'appendSections' y el modelo con su sección respectiva por el 'appendItems', al final aplicamos los cambios con 'apply'.
 
 `Navigation`: se realizara el modo 'Modal' y Push:
 - Modal: muestra una vista encima de otra, utilizamos directamente el 'ViewController' para poder mostrar una vista 'Sheet' que utiliza obligatoriamente el 'UIViewController' por el cual no lo hice en una UIView como los demás.
