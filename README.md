@@ -30,3 +30,5 @@
 `Navigation`: se realizara el modo 'Modal' y Push:
 - Modal: muestra una vista encima de otra, utilizamos directamente el 'ViewController' para poder mostrar una vista 'Sheet' que utiliza obligatoriamente el 'UIViewController' por el cual no lo hice en una UIView como los demás.
 - Push: se puede avanzar y retroceder en las vistas, en esta ocasión cree un nuevo 'storyboard' para 'MainA' para agregar un NavigationController.
+-- Se agregó una vista Modal dentro de una de las vista porque estas utilizan UIViewController y permite hacerlo.
+-- También se agregó la interacción de regresar a la vista inicial desde cualquier vista y la de regresar a la vista anterior.

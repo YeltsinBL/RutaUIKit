@@ -15,6 +15,7 @@
 		3B729606297B71DF00139F0B /* ViewControllerPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729605297B71DF00139F0B /* ViewControllerPush.swift */; };
 		3B729608297B796100139F0B /* ViewControllerPushA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729607297B796100139F0B /* ViewControllerPushA.swift */; };
 		3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */; };
+		3B72960C297B923200139F0B /* ViewControllerPushC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72960B297B923200139F0B /* ViewControllerPushC.swift */; };
 		3B72E7CD29784D050017CC32 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CC29784D050017CC32 /* StackView.swift */; };
 		3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7CF2978563B0017CC32 /* CollectionView.swift */; };
 		3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */; };
@@ -41,6 +42,7 @@
 		3B729605297B71DF00139F0B /* ViewControllerPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPush.swift; sourceTree = "<group>"; };
 		3B729607297B796100139F0B /* ViewControllerPushA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPushA.swift; sourceTree = "<group>"; };
 		3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPushB.swift; sourceTree = "<group>"; };
+		3B72960B297B923200139F0B /* ViewControllerPushC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPushC.swift; sourceTree = "<group>"; };
 		3B72E7CC29784D050017CC32 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		3B72E7CF2978563B0017CC32 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				3B729605297B71DF00139F0B /* ViewControllerPush.swift */,
 				3B729607297B796100139F0B /* ViewControllerPushA.swift */,
 				3B729609297B7B1F00139F0B /* ViewControllerPushB.swift */,
+				3B72960B297B923200139F0B /* ViewControllerPushC.swift */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */,
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
+				3B72960C297B923200139F0B /* ViewControllerPushC.swift in Sources */,
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
