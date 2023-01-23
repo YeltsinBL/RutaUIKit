@@ -21,15 +21,16 @@ class ViewController: UIViewController {
         configuration.title = "Mostrar Sheet"
         
         let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
-            //self.startNavigation() //para mostrar vistas Modales
-            self.presentSheetController()//para mostrar una Sheet Presentation
+            self.startNavigation() //para mostrar vistas Modales
+//            self.presentSheetController()//para mostrar una Sheet Presentation
         }))
         button.configuration = configuration
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     func startNavigation(){
-        present(ViewControllerA(), animated: true)
+//        present(ViewControllerA(), animated: true) //para mostrar vistas Modales
+        present(ViewControllerDP(), animated: true) //para mostrar una vista y liberar espacio en memoria
     }
     func presentSheetController(){
         let viewControllerToPresent = SheetViewController()
@@ -79,11 +80,11 @@ class ViewController: UIViewController {
         // Para acceder a la vista
         view.backgroundColor = .white
         
-//        [btnShowSheet].forEach(view.addSubview)
-//        NSLayoutConstraint.activate([
-//            btnShowSheet.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            btnShowSheet.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-//        ])
+        [btnShowSheet].forEach(view.addSubview)
+        NSLayoutConstraint.activate([
+            btnShowSheet.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            btnShowSheet.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 150)
+        ])
     }
 
 }

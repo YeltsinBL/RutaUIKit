@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//creamos las struct para parsear el Json que recibimos al hacer la peticion Http a un objeto de nuestro dominio
+//creamos las struct para parsear el Json que recibimos al hacer la petición Http a un objeto de nuestro dominio
 struct PokemonDataModel: Decodable {
     let name: String
     let url: String
@@ -24,22 +24,23 @@ struct PokemonsRespondeDataModel: Decodable {
     }
 }
 
-//creamos el protocolo que servira para enviar los datos a la vista
-protocol ApiClientDelegate {
+//creamos el protocolo que servirá para enviar los datos a la vista
+//agregamos AnyObject para que sea una referencia débil
+protocol ApiClientDelegate: AnyObject {
     func update(pokemons: PokemonsRespondeDataModel)
 }
 
 class ApiClient {
-//    creamos una propiedad
-    var delegate: ApiClientDelegate?
+//    creamos una propiedad y le hacemos una referencia débil con 'weak'
+    weak var delegate: ApiClientDelegate?
     
     func getPokemons(){
-//        creamos el endpoint al que vamos a llamar cuando se haga la peticion http
+//        creamos el endpoint al que vamos a llamar cuando se haga la petición http
         let url = URL(string: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151")!
-//        se encarga de hacer la peticion
+//        se encarga de hacer la petición
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             let dataModel = try! JSONDecoder().decode(PokemonsRespondeDataModel.self, from: data!)
-//            print("DataModel \(dataModel)")
+//            enviamos el modelo a la vista
             self.delegate?.update(pokemons: dataModel)
         }
         task.resume()
