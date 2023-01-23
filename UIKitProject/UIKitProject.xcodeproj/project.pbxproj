@@ -23,6 +23,8 @@
 		3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */; };
 		3B72E7D52978EDDD0017CC32 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D42978EDDC0017CC32 /* ViewControllerA.swift */; };
 		3B72E7D72978F6680017CC32 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72E7D62978F6680017CC32 /* ViewControllerB.swift */; };
+		3B7FB522297E0C7A00AA420B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB521297E0C7A00AA420B /* ApiClient.swift */; };
+		3B7FB524297E11CC00AA420B /* DelegationPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB523297E11CC00AA420B /* DelegationPatternView.swift */; };
 		3B82A2A0297237820088443C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A29F297237820088443C /* AppDelegate.swift */; };
 		3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A1297237820088443C /* SceneDelegate.swift */; };
 		3B82A2A4297237820088443C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A3297237820088443C /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		3B72E7D1297860060017CC32 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B72E7D42978EDDC0017CC32 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		3B72E7D62978F6680017CC32 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		3B7FB521297E0C7A00AA420B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3B7FB523297E11CC00AA420B /* DelegationPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationPatternView.swift; sourceTree = "<group>"; };
 		3B82A29C297237820088443C /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82A29F297237820088443C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B82A2A1297237820088443C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		3B7FB520297E0BD500AA420B /* DelegationPattern */ = {
+			isa = PBXGroup;
+			children = (
+				3B7FB521297E0C7A00AA420B /* ApiClient.swift */,
+				3B7FB523297E11CC00AA420B /* DelegationPatternView.swift */,
+			);
+			path = DelegationPattern;
+			sourceTree = "<group>";
+		};
 		3B82A293297237820088443C = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +184,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FB520297E0BD500AA420B /* DelegationPattern */,
 				3B72960D297B97F700139F0B /* Sheet */,
 				3B72E7D329786D180017CC32 /* Navigation */,
 				3B72E7CE297856220017CC32 /* Collection */,
@@ -291,12 +305,14 @@
 				3B72E7D72978F6680017CC32 /* ViewControllerB.swift in Sources */,
 				3B729608297B796100139F0B /* ViewControllerPushA.swift in Sources */,
 				3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */,
+				3B7FB522297E0C7A00AA420B /* ApiClient.swift in Sources */,
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3B729612297BA7BC00139F0B /* CollectionViewModern.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
 				3B72960C297B923200139F0B /* ViewControllerPushC.swift in Sources */,
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */,
+				3B7FB524297E11CC00AA420B /* DelegationPatternView.swift in Sources */,
 				3B82A2A0297237820088443C /* AppDelegate.swift in Sources */,
 				3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,

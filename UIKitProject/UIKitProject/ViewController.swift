@@ -70,7 +70,8 @@ class ViewController: UIViewController {
         
 //        self.view = StackView()
 //        self.view = CollectionView()
-        self.view = CollectionViewModern()
+//        self.view = CollectionViewModern()
+        self.view = DelegationPatternView()
     }
     
     override func viewDidLoad() {
