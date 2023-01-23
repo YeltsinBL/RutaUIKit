@@ -50,3 +50,4 @@
 - User Defined Runtime Attribute: se puede actualizar las propiedades de una vista pero se mostrará al ejecutar la aplicación, cabe recalcar que si se agrega una propiedad que no exista se mostrará por consola un error.
 - Utilización de '@IBDesignable' en una clase 'UIVIew' para actualizar los atributos de una vista.
 - Utilización de '@IBInspectable' para mostrar los atributos creados en la vista en el Inspector de Atributos.
+- Se navegó de un Storyboard a otro mediante un 'Storyboard Reference'.

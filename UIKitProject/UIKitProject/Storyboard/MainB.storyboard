@@ -70,6 +70,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfG-dh-fhW">
+                                <rect key="frame" x="116" y="300" width="161" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Navegar"/>
+                                <connections>
+                                    <segue destination="Zvh-NZ-jMo" kind="presentation" id="Dfd-qA-mfC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ege-H6-bRg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -79,6 +88,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Avv-97-1Pf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1863.3587786259541" y="-35.211267605633807"/>
+        </scene>
+        <!--MainC-->
+        <scene sceneID="faq-5v-zgy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainC" id="Zvh-NZ-jMo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4O-DK-LST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2578" y="-35"/>
         </scene>
     </scenes>
     <resources>
