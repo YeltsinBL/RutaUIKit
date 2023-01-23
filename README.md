@@ -40,3 +40,7 @@
 
 `Sheet`: es parecido al agregar una navegacion modal, pero se diferencia en la configuracion de la vista y el llamado por la instancia.
 
+`Delegation Pattern`: realizamos una petición http y al querer recibir la información en la vista:
+- Utilizamos el 'Delegate' mediante un protocolo que se crea en la clase 'ApiClient'.
+- Lo llamamos en la vista mediante una extensión indicando que conformara el protocolo anterior.
+- Indicamos que la vista sera el delegate del ApiClient.

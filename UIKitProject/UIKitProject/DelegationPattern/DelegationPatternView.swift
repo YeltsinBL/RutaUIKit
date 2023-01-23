@@ -52,6 +52,8 @@ class DelegationPatternView: UIView {
     private func addSubviews() {
 //        agregar la vista creada por codigo a la vista padre
 //        view.addSubview(onboardingImageView)
+//        indicamos que la Vista sera el delegate del ApiCliente
+        apiClient.delegate = self
         [btnButton1, lblLabel].forEach(addSubview)
     }
     
@@ -67,5 +69,13 @@ class DelegationPatternView: UIView {
     
     @objc func didTapOnAcceptButton(){
         apiClient.getPokemons()
+    }
+}
+//indicamos que la vista conformara el ApiClientDelegate para recibir los datos y actualizar la informacion
+extension DelegationPatternView: ApiClientDelegate {
+    func update(pokemons: PokemonsRespondeDataModel) {
+        DispatchQueue.main.async {
+            self.lblLabel.text = pokemons.pokemons.randomElement()?.name
+        }
     }
 }

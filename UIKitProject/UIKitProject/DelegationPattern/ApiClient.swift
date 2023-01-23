@@ -24,15 +24,23 @@ struct PokemonsRespondeDataModel: Decodable {
     }
 }
 
+//creamos el protocolo que servira para enviar los datos a la vista
+protocol ApiClientDelegate {
+    func update(pokemons: PokemonsRespondeDataModel)
+}
+
 class ApiClient {
+//    creamos una propiedad
+    var delegate: ApiClientDelegate?
+    
     func getPokemons(){
 //        creamos el endpoint al que vamos a llamar cuando se haga la peticion http
         let url = URL(string: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151")!
 //        se encarga de hacer la peticion
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             let dataModel = try! JSONDecoder().decode(PokemonsRespondeDataModel.self, from: data!)
-            print("DataModel \(dataModel)")
-            
+//            print("DataModel \(dataModel)")
+            self.delegate?.update(pokemons: dataModel)
         }
         task.resume()
         
