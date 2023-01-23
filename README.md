@@ -46,3 +46,4 @@
 - Indicamos que la vista sera el delegate del ApiClient.
 - Retain Cycles: si no manejamos bien las instancias de código en la aplicación hará que esta crashee y nunca dejará de usar memoria. Ocurre cuando existe 2 instancias fuertes entre ellas. Para hacer una referencia débil se asigna al protocolo el tipo 'AnyObject' y a la propiedad de esta se agrega 'weak'.
 
+`StoryBoard`: Creación de las vistas y funcionalidad utilizando el storyboard

@@ -26,6 +26,9 @@
 		3B7FB522297E0C7A00AA420B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB521297E0C7A00AA420B /* ApiClient.swift */; };
 		3B7FB524297E11CC00AA420B /* DelegationPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB523297E11CC00AA420B /* DelegationPatternView.swift */; };
 		3B7FB526297E294C00AA420B /* ViewControllerDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB525297E294C00AA420B /* ViewControllerDP.swift */; };
+		3B7FB529297E5CEE00AA420B /* MainB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FB528297E5CEE00AA420B /* MainB.storyboard */; };
+		3B7FB52B297E5D4500AA420B /* ViewControllerStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */; };
+		3B7FB52D297E5E0300AA420B /* ViewControllerStory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */; };
 		3B82A2A0297237820088443C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A29F297237820088443C /* AppDelegate.swift */; };
 		3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A1297237820088443C /* SceneDelegate.swift */; };
 		3B82A2A4297237820088443C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A3297237820088443C /* ViewController.swift */; };
@@ -58,6 +61,9 @@
 		3B7FB521297E0C7A00AA420B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3B7FB523297E11CC00AA420B /* DelegationPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationPatternView.swift; sourceTree = "<group>"; };
 		3B7FB525297E294C00AA420B /* ViewControllerDP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDP.swift; sourceTree = "<group>"; };
+		3B7FB528297E5CEE00AA420B /* MainB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainB.storyboard; sourceTree = "<group>"; };
+		3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStory.swift; sourceTree = "<group>"; };
+		3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStory2.swift; sourceTree = "<group>"; };
 		3B82A29C297237820088443C /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82A29F297237820088443C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B82A2A1297237820088443C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +174,16 @@
 			path = DelegationPattern;
 			sourceTree = "<group>";
 		};
+		3B7FB527297E5CC500AA420B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B7FB528297E5CEE00AA420B /* MainB.storyboard */,
+				3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */,
+				3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		3B82A293297237820088443C = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +203,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FB527297E5CC500AA420B /* Storyboard */,
 				3B7FB520297E0BD500AA420B /* DelegationPattern */,
 				3B72960D297B97F700139F0B /* Sheet */,
 				3B72E7D329786D180017CC32 /* Navigation */,
@@ -294,6 +311,7 @@
 				3B729604297B71BB00139F0B /* MainA.storyboard in Resources */,
 				3B82A2A9297237840088443C /* Assets.xcassets in Resources */,
 				3B82A2A7297237820088443C /* Main.storyboard in Resources */,
+				3B7FB529297E5CEE00AA420B /* MainB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +340,8 @@
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 				3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */,
 				3B713C0D2975CB4300B35243 /* TableView.swift in Sources */,
+				3B7FB52D297E5E0300AA420B /* ViewControllerStory2.swift in Sources */,
+				3B7FB52B297E5D4500AA420B /* ViewControllerStory.swift in Sources */,
 				3BB8A328297530D500A9F853 /* ImageView.swift in Sources */,
 				3B713C1429762AA500B35243 /* TableViewDelegate.swift in Sources */,
 				3BB8A325297529C700A9F853 /* LabelView.swift in Sources */,
