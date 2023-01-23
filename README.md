@@ -47,3 +47,6 @@
 - Retain Cycles: si no manejamos bien las instancias de código en la aplicación hará que esta crashee y nunca dejará de usar memoria. Ocurre cuando existe 2 instancias fuertes entre ellas. Para hacer una referencia débil se asigna al protocolo el tipo 'AnyObject' y a la propiedad de esta se agrega 'weak'.
 
 `StoryBoard`: Creación de las vistas y funcionalidad utilizando el storyboard
+- User Defined Runtime Attribute: se puede actualizar las propiedades de una vista pero se mostrará al ejecutar la aplicación, cabe recalcar que si se agrega una propiedad que no exista se mostrará por consola un error.
+- Utilización de '@IBDesignable' en una clase 'UIVIew' para actualizar los atributos de una vista.
+- Utilización de '@IBInspectable' para mostrar los atributos creados en la vista en el Inspector de Atributos.

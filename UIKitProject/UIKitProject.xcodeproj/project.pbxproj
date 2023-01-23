@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B69EBE0297EF87900A6915F /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EBDF297EF87900A6915F /* CustomView.swift */; };
 		3B713C0D2975CB4300B35243 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0C2975CB4300B35243 /* TableView.swift */; };
 		3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */; };
 		3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C11297628E700B35243 /* TableViewDataSource.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B69EBDF297EF87900A6915F /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		3B713C0C2975CB4300B35243 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3B713C11297628E700B35243 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				3B7FB528297E5CEE00AA420B /* MainB.storyboard */,
 				3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */,
 				3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */,
+				3B69EBDF297EF87900A6915F /* CustomView.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 				3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */,
+				3B69EBE0297EF87900A6915F /* CustomView.swift in Sources */,
 				3B713C0D2975CB4300B35243 /* TableView.swift in Sources */,
 				3B7FB52D297E5E0300AA420B /* ViewControllerStory2.swift in Sources */,
 				3B7FB52B297E5D4500AA420B /* ViewControllerStory.swift in Sources */,
