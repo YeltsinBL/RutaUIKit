@@ -15,6 +15,8 @@
 		3B69EBED297F08A500A6915F /* CustomViewXIBs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B69EBEC297F08A500A6915F /* CustomViewXIBs.xib */; };
 		3B69EBEF297F0C4F00A6915F /* MainD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B69EBEE297F0C4F00A6915F /* MainD.storyboard */; };
 		3B69EBF1297F0D3000A6915F /* ViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EBF0297F0D3000A6915F /* ViewControllerD.swift */; };
+		3B69EBF4297F70F500A6915F /* ViewControllerXIBsA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EBF2297F70F500A6915F /* ViewControllerXIBsA.swift */; };
+		3B69EBF5297F70F500A6915F /* ViewControllerXIBsA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B69EBF3297F70F500A6915F /* ViewControllerXIBsA.xib */; };
 		3B713C0D2975CB4300B35243 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0C2975CB4300B35243 /* TableView.swift */; };
 		3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */; };
 		3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B713C11297628E700B35243 /* TableViewDataSource.swift */; };
@@ -58,6 +60,8 @@
 		3B69EBEC297F08A500A6915F /* CustomViewXIBs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewXIBs.xib; sourceTree = "<group>"; };
 		3B69EBEE297F0C4F00A6915F /* MainD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainD.storyboard; sourceTree = "<group>"; };
 		3B69EBF0297F0D3000A6915F /* ViewControllerD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerD.swift; sourceTree = "<group>"; };
+		3B69EBF2297F70F500A6915F /* ViewControllerXIBsA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerXIBsA.swift; sourceTree = "<group>"; };
+		3B69EBF3297F70F500A6915F /* ViewControllerXIBsA.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerXIBsA.xib; sourceTree = "<group>"; };
 		3B713C0C2975CB4300B35243 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		3B713C0F29761A6100B35243 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3B713C11297628E700B35243 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				3B69EBE7297F037200A6915F /* ViewControllerXIBs.xib */,
 				3B69EBEA297F088D00A6915F /* CustomViewXIBs.swift */,
 				3B69EBEC297F08A500A6915F /* CustomViewXIBs.xib */,
+				3B69EBF2297F70F500A6915F /* ViewControllerXIBsA.swift */,
+				3B69EBF3297F70F500A6915F /* ViewControllerXIBsA.xib */,
 				3B69EBEE297F0C4F00A6915F /* MainD.storyboard */,
 				3B69EBF0297F0D3000A6915F /* ViewControllerD.swift */,
 			);
@@ -341,6 +347,7 @@
 			files = (
 				3B82A2AC297237840088443C /* LaunchScreen.storyboard in Resources */,
 				3B729604297B71BB00139F0B /* MainA.storyboard in Resources */,
+				3B69EBF5297F70F500A6915F /* ViewControllerXIBsA.xib in Resources */,
 				3B69EBE9297F037200A6915F /* ViewControllerXIBs.xib in Resources */,
 				3B82A2A9297237840088443C /* Assets.xcassets in Resources */,
 				3B69EBE2297EFF5800A6915F /* MainC.storyboard in Resources */,
@@ -368,6 +375,7 @@
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
 				3B729612297BA7BC00139F0B /* CollectionViewModern.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
+				3B69EBF4297F70F500A6915F /* ViewControllerXIBsA.swift in Sources */,
 				3B72960C297B923200139F0B /* ViewControllerPushC.swift in Sources */,
 				3BB8A3202975187300A9F853 /* ButtonView.swift in Sources */,
 				3B72960A297B7B1F00139F0B /* ViewControllerPushB.swift in Sources */,

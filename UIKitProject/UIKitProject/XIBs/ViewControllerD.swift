@@ -15,7 +15,7 @@ class ViewControllerD: UIViewController {
     }
     
     @IBAction func didTapOnButton() {
-//        nib: utiliza la maquina para entender el codigo
+//        nib: utiliza la maquina para entender el código
         let viewControllerXIBs = ViewControllerXIBs(nibName: "ViewControllerXIBs", bundle: nil)
         self.present(viewControllerXIBs, animated: true)
     }

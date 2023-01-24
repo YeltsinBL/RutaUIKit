@@ -14,16 +14,10 @@ class ViewControllerXIBs: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//Conexión de un Xib a otro Xib
+    @IBAction func navigationToViewControllerXIBsA(_ sender: Any) {
+        let viewControllerXIBsA = ViewControllerXIBsA(nibName: "ViewControllerXIBsA", bundle: nil)
+        self.present(viewControllerXIBsA, animated: true)
     }
-    */
 
 }

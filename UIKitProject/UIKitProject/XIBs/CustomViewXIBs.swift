@@ -16,7 +16,7 @@ class CustomViewXIBs: UIView {
     }
 
     func setup(){
-//      preparamos este nib para ser desarchivado e instanciado en la vista, si se escribe mal el nombre la aplicacion crasheara por no encontrarla
+//      preparamos este nib para ser desarchivado e instanciado en la vista, si se escribe mal el nombre la aplicación crasheara por no encontrarla
         let nib = UINib(nibName: "CustomViewXIBs", bundle: nil)
 //        desarchivamos e instanciamos el contenido del nib y lo casteamos a UIView obteniendo un array como resultado quedandonos con el primer elemento
         guard let customView = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
