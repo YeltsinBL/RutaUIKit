@@ -51,3 +51,6 @@
 - Utilización de '@IBDesignable' en una clase 'UIVIew' para actualizar los atributos de una vista.
 - Utilización de '@IBInspectable' para mostrar los atributos creados en la vista en el Inspector de Atributos.
 - Se navegó de un Storyboard a otro mediante un 'Storyboard Reference'.
+
+`XIBs`: otra forma de hacer vistas en XCode, antes de utilizar Storyboard se hacían de esta forma las vistas.
+- Se hizo una navegación entre un Storyboard de inicio hacia un XIBs.
