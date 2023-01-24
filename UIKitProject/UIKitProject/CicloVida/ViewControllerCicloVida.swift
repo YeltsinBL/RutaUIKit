@@ -16,12 +16,15 @@ class ViewControllerCicloVida: UIViewController {
         configuration.title = "Mostrar otro ViewController"
 //        para liberar memoria por el boton se utiliza '[weak self]' y el '?' en el self
         let button = UIButton(type: .system, primaryAction: UIAction(handler: { [weak self] action in
-            self?.presentCurrentViewController()
+//            self?.presentCurrentViewController()
+            self?.changeConstrainValue()
         }))
         button.translatesAutoresizingMaskIntoConstraints = false
         button.configuration = configuration
         return button
     }()
+    
+    var buttonConstrain: NSLayoutConstraint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +33,12 @@ class ViewControllerCicloVida: UIViewController {
         view.backgroundColor = [.systemRed, .systemBlue, .systemCyan, .systemMint, .systemPink].randomElement()
         
         view.addSubview(btnButton)
+        
+        buttonConstrain = btnButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        
         NSLayoutConstraint.activate([
-            btnButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            btnButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            btnButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonConstrain!
         ])
         
     }
@@ -46,15 +52,25 @@ class ViewControllerCicloVida: UIViewController {
         print("2. viewWillAppear \(self.description)")
     }
 
-//    override func viewWillLayoutSubviews() {
-//        super.viewWillLayoutSubviews()
-//        print("3. viewWillLayoutSubviews \(self.description)")
-//    }
-//
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        print("4. viewDidLayoutSubviews \(self.description)")
-//    }
+    func changeConstrainValue(){
+        view.removeConstraint(buttonConstrain!)
+        buttonConstrain = btnButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100)
+        
+        NSLayoutConstraint.activate([
+            btnButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonConstrain!
+        ])
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print("3. viewWillLayoutSubviews \(self.description)")
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print("4. viewDidLayoutSubviews \(self.description)")
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
