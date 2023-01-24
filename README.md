@@ -58,3 +58,18 @@
 - Se hizo la navegación de un Xib a otro Xib.
 
 > Nota: cuando se trabaja desde el IB (interface builder) y modificamos la vista, estamos trabajando con el 'chips'; pero cuando entramos al codigo hace referencia a los 'nibs'.
+
+### Ciclo de Vida de los ViewController
+Los métodos que se llaman al cargar el ViewController, cuando está por presentarse o se ha cargado y está  por eliminarse o se ha eliminado, son:
+1. `viewDidLoad`: se llama para notificar al 'ViewController' que su vista se ha cargado en memoria. 
+  1. Dentro de este método podemos añadir lógica, subvistas, constrains, etc.
+1. `viewWillAppear`: se llama cuando la vista esta preparada y se va a mostrar en el 'ViewController'
+1. `viewWillLayoutSubviews`: se llama para notificar al 'ViewController' que la vista esta apunto de posicionar sus subvistas.
+  1. Cuando rotamos la vista del dispositivo de horizontal a vertical y; las vistas se tienen que redibujar y distribuir por la vista padre, es en ese momento que se llama este método.
+1. `viewDidLayoutSubviews`: se llama para notificar al 'ViewController' de que la vista acaba de posicionar todas sus subvistas.
+  1. Ocurre después del `viewWillLayoutSubviews`
+1. `viewDidAppear`: se llama cuando la vista ya se ha cargado en el 'ViewController' y se esté mostrando al usuario.
+1. `viewWillDisappear`: se llama para notificar al 'ViewController' de que la vista está apunto de ser eliminada de la jerarquía de vistas.
+1. `viewDidDisappear`: se llama para notificar al 'ViewController' de que la vista a sido eliminada de la jerarquía de vistas.
+
+> Nota: los métodos `viewWillDisappear` y `viewDidDisappear` no se pueden ejecutar en el root principal del 'ViewController', para poder utilizarlos deberíamos crear otro 'ViewController' y dismissearlo.
