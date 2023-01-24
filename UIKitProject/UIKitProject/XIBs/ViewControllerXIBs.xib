@@ -27,7 +27,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hU-lb-Bjm">
-                    <rect key="frame" x="76" y="305" width="240" height="34"/>
+                    <rect key="frame" x="76" y="305" width="240" height="34.333333333333314"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="6PL-xR-bwF"/>
                         <constraint firstAttribute="height" constant="34.333333333333314" id="uoy-hU-lIw"/>
@@ -35,15 +35,23 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="tinted" title="Navegar ViewController A"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxq-vD-GwW" customClass="CustomViewXIBs" customModule="UIKitProject" customModuleProvider="target">
+                    <rect key="frame" x="16" y="412" width="361" height="248"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Pxq-vD-GwW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="353" id="0VI-SY-s0f"/>
                 <constraint firstItem="3hU-lb-Bjm" firstAttribute="top" secondItem="NJh-aK-f16" secondAttribute="bottom" constant="54" id="1Yx-3G-SJv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pxq-vD-GwW" secondAttribute="bottom" constant="158" id="24W-RW-ldu"/>
                 <constraint firstItem="3hU-lb-Bjm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="Jxo-v1-cM9"/>
                 <constraint firstItem="NJh-aK-f16" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="TmV-k8-B3A"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3hU-lb-Bjm" secondAttribute="trailing" constant="77" id="btY-MK-kuO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NJh-aK-f16" secondAttribute="trailing" constant="77" id="hsS-jc-vBS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pxq-vD-GwW" secondAttribute="trailing" constant="16" id="k7A-d7-sAD"/>
+                <constraint firstItem="Pxq-vD-GwW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oUz-H8-LBq"/>
                 <constraint firstItem="NJh-aK-f16" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="29" id="rPb-xt-9Ew"/>
             </constraints>
             <point key="canvasLocation" x="107.63358778625954" y="-11.267605633802818"/>

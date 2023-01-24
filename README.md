@@ -54,3 +54,6 @@
 
 `XIBs`: otra forma de hacer vistas en XCode, antes de utilizar Storyboard se hacían de esta forma las vistas.
 - Se hizo una navegación entre un Storyboard de inicio hacia un XIBs.
+- Se creo una vista utilizando el 'UINib; para visualizarla en un XIBs pero esta no se muestra en el IB sino al compilar en un simulador.
+
+> Nota: cuando se trabaja desde el IB (interface builder) y modificamos la vista, estamos trabajando con el 'chips'; pero cuando entramos al codigo hace referencia a los 'nibs'.
