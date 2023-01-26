@@ -17,12 +17,30 @@ class ViewControllerAnimation:UIViewController{
         return view
     }()
     
+    var heightConstrain, widthConstrain: NSLayoutConstraint? //creamos esta variable para actualizar su constrain en Y
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(vView)
-        vView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        vView.center = self.view.center //centramos la vista 'vView' con la vista del controller
+        
+/**Animaciones hecho por código con constrains**/
+        heightConstrain = vView.heightAnchor.constraint(equalToConstant: 200)
+        widthConstrain = vView.widthAnchor.constraint(equalToConstant: 200)
+        NSLayoutConstraint.activate([
+            heightConstrain!,
+            widthConstrain!,
+            vView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            vView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+            self.animateConstrain()
+        }
+/**Animaciones hecho por código con constrains**/
+        
+/**Animaciones hecho por código sin constrains**/
+//        vView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+//        vView.center = self.view.center //centramos la vista 'vView' con la vista del controller
 //        vView.alpha = 0.0 //hacemos que la vista no se vea al inicio
         
 //        Agregamos animación a la vView
@@ -41,12 +59,29 @@ class ViewControllerAnimation:UIViewController{
         // InitialSpringVelocity: velocidad inicial de la animación.
         // Options: mascaras de opciones, si queremos que la animación sea mas rápida al inicio o final, etc.
         // Completion: se ejecuta cuando la animación ha finalizado
+//        UIView.animate(withDuration: 2, delay: 2, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+//            self.vView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+//            self.vView.center = self.view.center
+//            self.vView.layer.cornerRadius = 50
+//        } completion: { isFinished in
+//            print("Ha finalizado la animación? \(isFinished)")
+//        }
+/**Animaciones hecho por código sin constrains**/
+        
+        
+        
+        
+    }
+
+/**Funciónpara la animaciones hecho por código con constrains**/
+    func animateConstrain(){
         UIView.animate(withDuration: 2, delay: 2, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: .curveEaseInOut) {
-            self.vView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
-            self.vView.center = self.view.center
+            self.heightConstrain?.constant = 300
+            self.widthConstrain?.constant = 300
             self.vView.layer.cornerRadius = 50
-        } completion: { isFinished in
-            print("Ha finalizado la animación? \(isFinished)")
+            self.view.layoutIfNeeded() //formazos a la vista para que se actualice y muestre la animación
         }
     }
+/**Función para la animaciones hecho por código con constrains**/
+    
 }

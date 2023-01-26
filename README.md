@@ -66,6 +66,9 @@
 -- InitialSpringVelocity: velocidad inicial de la animación.
 -- Options: mascaras de opciones, si queremos que la animación sea mas rápida al inicio o final, etc.
 -- Completion: se ejecuta cuando la animación ha finalizado
+- Animación por código sin constrains: agregamos las constrains como se venia haciendo por código pero algunos los hacemos con variables para actualizar su valor en la animación.
+-- Utilizamos el 'DispatchQueue.main.asyncAfter' para que actualice la vista en tiempo de ejecución.
+-- Creamos una función donde se hará las modificaciones a la vista y se agrega 'self.view.layoutIfNeeded()' para formazar la animación 
 
 ### Ciclo de Vida de los ViewController
 Los métodos que se llaman al cargar el ViewController, cuando está por presentarse o se ha cargado y está  por eliminarse o se ha eliminado, son:
