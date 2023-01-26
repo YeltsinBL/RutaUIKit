@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B69EA0D2982D9540024F186 /* ViewControllerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EA0C2982D9540024F186 /* ViewControllerAnimation.swift */; };
+		3B69EA0F2982D97F0024F186 /* MainF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B69EA0E2982D97F0024F186 /* MainF.storyboard */; };
 		3B69EBE0297EF87900A6915F /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EBDF297EF87900A6915F /* CustomView.swift */; };
 		3B69EBE2297EFF5800A6915F /* MainC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B69EBE1297EFF5800A6915F /* MainC.storyboard */; };
 		3B69EBE8297F037200A6915F /* ViewControllerXIBs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69EBE6297F037200A6915F /* ViewControllerXIBs.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B69EA0C2982D9540024F186 /* ViewControllerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAnimation.swift; sourceTree = "<group>"; };
+		3B69EA0E2982D97F0024F186 /* MainF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainF.storyboard; sourceTree = "<group>"; };
 		3B69EBDF297EF87900A6915F /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		3B69EBE1297EFF5800A6915F /* MainC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainC.storyboard; sourceTree = "<group>"; };
 		3B69EBE6297F037200A6915F /* ViewControllerXIBs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerXIBs.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B69EA0B2982D9150024F186 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3B69EA0C2982D9540024F186 /* ViewControllerAnimation.swift */,
+				3B69EA0E2982D97F0024F186 /* MainF.storyboard */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		3B69EBE3297F030900A6915F /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +266,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B69EA0B2982D9150024F186 /* Animation */,
 				3B69EBF6297FA9E300A6915F /* CicloVida */,
 				3B69EBE3297F030900A6915F /* XIBs */,
 				3B7FB527297E5CC500AA420B /* Storyboard */,
@@ -365,6 +379,7 @@
 				3B69EBE9297F037200A6915F /* ViewControllerXIBs.xib in Resources */,
 				3B82A2A9297237840088443C /* Assets.xcassets in Resources */,
 				3B69EBE2297EFF5800A6915F /* MainC.storyboard in Resources */,
+				3B69EA0F2982D97F0024F186 /* MainF.storyboard in Resources */,
 				3B69EBF8297FAA0500A6915F /* MainE.storyboard in Resources */,
 				3B82A2A7297237820088443C /* Main.storyboard in Resources */,
 				3B7FB529297E5CEE00AA420B /* MainB.storyboard in Resources */,
@@ -389,6 +404,7 @@
 				3B72E7D2297860070017CC32 /* CustomCollectionViewCell.swift in Sources */,
 				3B7FB522297E0C7A00AA420B /* ApiClient.swift in Sources */,
 				3B82A2A4297237820088443C /* ViewController.swift in Sources */,
+				3B69EA0D2982D9540024F186 /* ViewControllerAnimation.swift in Sources */,
 				3B729612297BA7BC00139F0B /* CollectionViewModern.swift in Sources */,
 				3BB8A31B2975138800A9F853 /* OnBoardingView.swift in Sources */,
 				3B69EBF4297F70F500A6915F /* ViewControllerXIBsA.swift in Sources */,

@@ -59,6 +59,14 @@
 
 > Nota: cuando se trabaja desde el IB (interface builder) y modificamos la vista, estamos trabajando con el 'chips'; pero cuando entramos al codigo hace referencia a los 'nibs'.
 
+`Animation`: creamos animaciones a las vistas.
+- Animación por código sin constrains: utilizamos el frame para darle un lugar y tamaño especifica a la vista. Utilizamos: 
+-- Delay: tiempo que debe pasar para que empiece la animación.
+-- UsingSpringWithDamping: amortiguamiento para la animación (rebote), mientras mas cercano al cero hará que oscile mas rápido.
+-- InitialSpringVelocity: velocidad inicial de la animación.
+-- Options: mascaras de opciones, si queremos que la animación sea mas rápida al inicio o final, etc.
+-- Completion: se ejecuta cuando la animación ha finalizado
+
 ### Ciclo de Vida de los ViewController
 Los métodos que se llaman al cargar el ViewController, cuando está por presentarse o se ha cargado y está  por eliminarse o se ha eliminado, son:
 1. `viewDidLoad`: se llama para notificar al 'ViewController' que su vista se ha cargado en memoria. 
