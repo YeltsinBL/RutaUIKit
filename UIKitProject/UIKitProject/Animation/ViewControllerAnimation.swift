@@ -10,29 +10,35 @@ import UIKit
 
 class ViewControllerAnimation:UIViewController{
     
-    let vView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
-        return view
-    }()
+//    let vView: UIView = {
+//        let view = UIView()
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        view.backgroundColor = .green
+//        return view
+//    }()
+
+/* Variables hechas desde el Storyboard */
+    @IBOutlet weak var sbWidhtConst: NSLayoutConstraint!
+    @IBOutlet weak var sbHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var sbViewCorner: UIView!
+/* Variables hechas desde el Storyboard */
     
-    var heightConstrain, widthConstrain: NSLayoutConstraint? //creamos esta variable para actualizar su constrain en Y
+//    var heightConstrain, widthConstrain: NSLayoutConstraint? //creamos esta variable para actualizar su constrain en Y
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(vView)
+//        view.addSubview(vView)
         
 /**Animaciones hecho por código con constrains**/
-        heightConstrain = vView.heightAnchor.constraint(equalToConstant: 200)
-        widthConstrain = vView.widthAnchor.constraint(equalToConstant: 200)
-        NSLayoutConstraint.activate([
-            heightConstrain!,
-            widthConstrain!,
-            vView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            vView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
+//        heightConstrain = vView.heightAnchor.constraint(equalToConstant: 200)
+//        widthConstrain = vView.widthAnchor.constraint(equalToConstant: 200)
+//        NSLayoutConstraint.activate([
+//            heightConstrain!,
+//            widthConstrain!,
+//            vView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//            vView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+//        ])
         DispatchQueue.main.asyncAfter(deadline: .now() + 1){
             self.animateConstrain()
         }
@@ -73,15 +79,18 @@ class ViewControllerAnimation:UIViewController{
         
     }
 
-/**Funciónpara la animaciones hecho por código con constrains**/
+/**Función para la animaciones hecho por código y storyboard con constrains**/
     func animateConstrain(){
         UIView.animate(withDuration: 2, delay: 2, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: .curveEaseInOut) {
-            self.heightConstrain?.constant = 300
-            self.widthConstrain?.constant = 300
-            self.vView.layer.cornerRadius = 50
+//            self.heightConstrain?.constant = 300
+//            self.widthConstrain?.constant = 300
+//            self.vView.layer.cornerRadius = 50
+            self.sbWidhtConst?.constant = 300
+            self.sbHeightConst?.constant = 300
+            self.sbViewCorner.layer.cornerRadius = 50
             self.view.layoutIfNeeded() //formazos a la vista para que se actualice y muestre la animación
         }
     }
-/**Función para la animaciones hecho por código con constrains**/
+/**Función para la animaciones hecho por código y storyboard con constrains**/
     
 }

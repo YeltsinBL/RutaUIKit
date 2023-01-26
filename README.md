@@ -1,7 +1,7 @@
 # RutaUIKit
 ## _Aprendiendo a crear las UI de aplicaciones iOS mediante el storyboard y código._  
 
-`ViewController`: creación de UIImageView, UILabel y UIButton, utilicé el `translatesAutoresizingMaskIntoConstraints` para activar los constrains por código y en el `viewDidLoad` agregue los constrains a las vistas creadas.
+`ViewController`: creación de UIImageView, UILabel y UIButton, utilicé el `translatesAutoresizingMaskIntoConstraints` para activar los constrains por código y en el `viewDidLoad` agregué los constrains a las vistas creadas.
 
 `OnBoardingView`: se creó para poder quitar la responsabilidad de crear la vista en `ViewController` por lo que queda el código mas limpio.
 
@@ -66,9 +66,10 @@
 -- InitialSpringVelocity: velocidad inicial de la animación.
 -- Options: mascaras de opciones, si queremos que la animación sea mas rápida al inicio o final, etc.
 -- Completion: se ejecuta cuando la animación ha finalizado
-- Animación por código sin constrains: agregamos las constrains como se venia haciendo por código pero algunos los hacemos con variables para actualizar su valor en la animación.
+- Animación por código con constrains: agregamos las constrains como se venia haciendo por código pero algunos los hacemos con variables para actualizar su valor en la animación.
 -- Utilizamos el 'DispatchQueue.main.asyncAfter' para que actualice la vista en tiempo de ejecución.
--- Creamos una función donde se hará las modificaciones a la vista y se agrega 'self.view.layoutIfNeeded()' para formazar la animación 
+-- Creamos una función donde se hará las modificaciones a la vista y se agrega 'self.view.layoutIfNeeded()' para formazar la animación.
+- Animación utilizando el Storyboard y sus constrains: agregué una vista con sus constrains, las cuales los conecté al controller y realice el mismo procedimiento que la Animación con Constrains.
 
 ### Ciclo de Vida de los ViewController
 Los métodos que se llaman al cargar el ViewController, cuando está por presentarse o se ha cargado y está  por eliminarse o se ha eliminado, son:
