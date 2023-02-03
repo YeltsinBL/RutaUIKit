@@ -85,3 +85,7 @@ Los métodos que se llaman al cargar el ViewController, cuando está por present
 1. `viewDidDisappear`: se llama para notificar al 'ViewController' de que la vista a sido eliminada de la jerarquía de vistas.
 
 > Nota: los métodos `viewWillDisappear` y `viewDidDisappear` no se pueden ejecutar en el root principal del 'ViewController', para poder utilizarlos deberíamos crear otro 'ViewController' y dismissearlo.
+
+### Migración de UIKit a SwiftUI
+- UIHostingController: creamos una instancia de este tipo que espera la 'rootView' de la nueva vista de SwiftUI.
+- UIHostingConfiguration: creamos una vista en SwiftUI y la podemos utilizar como celdas de una 'UITableView'
