@@ -99,3 +99,5 @@ Los métodos que se llaman al cargar el ViewController, cuando está por present
 ### Migración de UIKit a SwiftUI
 - UIHostingController: creamos una instancia de este tipo que espera la 'rootView' de la nueva vista de SwiftUI.
 - UIHostingConfiguration: creamos una vista en SwiftUI y la podemos utilizar como celdas de una 'UITableView'
+
+Guía de los ejercicios en el canal de [SwiftBeta](https://www.youtube.com/watch?v=obz5jgyybWU&list=PLeTOFRUxkMcqcSYTxtRPgc-qaLtWfdFTc&index=1)
