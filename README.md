@@ -71,6 +71,16 @@
 -- Creamos una función donde se hará las modificaciones a la vista y se agrega 'self.view.layoutIfNeeded()' para formazar la animación.
 - Animación utilizando el Storyboard y sus constrains: agregué una vista con sus constrains, las cuales los conecté al controller y realice el mismo procedimiento que la Animación con Constrains.
 
+`Child`: para agregar un ViewController dentro de otro ViewController.
+- Mostrar el ViewController Secundario en el ViewController Principal:
+-- Agregamos la vista del ViewController secundario al Viewcontroller principal 'view.addSubview(ViewControllerSecundario.view)'.
+-- Utilizamos el 'addChild' para agregar al ViewController secundario como hijo del ViewController principal 'addChild(ViewControllerSecundario)'.
+-- Notificamos al ViewController secundario que se movido la vista la ViewController principal 'ViewControllerSecundario.didMove(toParent: self)'.
+- Eliminar el ViewController Secundario del ViewController Principal:
+-- Indicamos al ViewCotroller secundario que será eliminado del principal con el 'ViewControllerSecundario.willMove(toParent: self)'.
+-- Eliminamos el ViewController Secundario del ViewController Principal 'ViewControllerSecundario.removeFromParent()'.
+-- Eliminamos la vista del ViewController secundario del ViewController Principal 'ViewControllerSecundario.view.removeFromSuperview()'.
+
 ### Ciclo de Vida de los ViewController
 Los métodos que se llaman al cargar el ViewController, cuando está por presentarse o se ha cargado y está  por eliminarse o se ha eliminado, son:
 1. `viewDidLoad`: se llama para notificar al 'ViewController' que su vista se ha cargado en memoria. 

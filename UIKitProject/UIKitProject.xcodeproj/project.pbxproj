@@ -43,6 +43,8 @@
 		3B7FB529297E5CEE00AA420B /* MainB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FB528297E5CEE00AA420B /* MainB.storyboard */; };
 		3B7FB52B297E5D4500AA420B /* ViewControllerStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */; };
 		3B7FB52D297E5E0300AA420B /* ViewControllerStory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */; };
+		3B81278D298D681200FAF667 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81278C298D681200FAF667 /* ChildViewController.swift */; };
+		3B81278F298D684200FAF667 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81278E298D684200FAF667 /* ActivityIndicatorViewController.swift */; };
 		3B82A2A0297237820088443C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A29F297237820088443C /* AppDelegate.swift */; };
 		3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A1297237820088443C /* SceneDelegate.swift */; };
 		3B82A2A4297237820088443C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A2A3297237820088443C /* ViewController.swift */; };
@@ -92,6 +94,8 @@
 		3B7FB528297E5CEE00AA420B /* MainB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainB.storyboard; sourceTree = "<group>"; };
 		3B7FB52A297E5D4500AA420B /* ViewControllerStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStory.swift; sourceTree = "<group>"; };
 		3B7FB52C297E5E0300AA420B /* ViewControllerStory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStory2.swift; sourceTree = "<group>"; };
+		3B81278C298D681200FAF667 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		3B81278E298D684200FAF667 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		3B82A29C297237820088443C /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82A29F297237820088443C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B82A2A1297237820088443C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +251,15 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		3B81278B298D67A500FAF667 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				3B81278C298D681200FAF667 /* ChildViewController.swift */,
+				3B81278E298D684200FAF667 /* ActivityIndicatorViewController.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
 		3B82A293297237820088443C = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +279,7 @@
 		3B82A29E297237820088443C /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				3B81278B298D67A500FAF667 /* Child */,
 				3B69EA0B2982D9150024F186 /* Animation */,
 				3B69EBF6297FA9E300A6915F /* CicloVida */,
 				3B69EBE3297F030900A6915F /* XIBs */,
@@ -396,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B713C1029761A6100B35243 /* CustomTableViewCell.swift in Sources */,
+				3B81278F298D684200FAF667 /* ActivityIndicatorViewController.swift in Sources */,
 				3B69EBE8297F037200A6915F /* ViewControllerXIBs.swift in Sources */,
 				3B72E7D72978F6680017CC32 /* ViewControllerB.swift in Sources */,
 				3B729608297B796100139F0B /* ViewControllerPushA.swift in Sources */,
@@ -416,6 +431,7 @@
 				3B72E7D02978563B0017CC32 /* CollectionView.swift in Sources */,
 				3B82A2A2297237820088443C /* SceneDelegate.swift in Sources */,
 				3B713C12297628E700B35243 /* TableViewDataSource.swift in Sources */,
+				3B81278D298D681200FAF667 /* ChildViewController.swift in Sources */,
 				3B69EBE0297EF87900A6915F /* CustomView.swift in Sources */,
 				3B713C0D2975CB4300B35243 /* TableView.swift in Sources */,
 				3B7FB52D297E5E0300AA420B /* ViewControllerStory2.swift in Sources */,
